@@ -7,12 +7,12 @@ public class UserRegistrationTest {
     private static final UserRegistration user = new UserRegistration();
 
 /* handling exceptions to given first names of null,empty and improper
-    5 exceptions, Starts from 10th line and ends at 65th line */
+    5 exceptions test cases, Starts from 10th line and ends at 65th line */
 
     @Test
     public void HandleCustomExceptionForGivenImproperFirstNameWithNoMinimumCharacters() {
         try {
-                boolean actual = user.validateFirstName("Mi");
+            boolean actual = user.validateFirstName("Mi");
             Assert.assertEquals(false,actual);
         } catch (UserRegistrationException e){
             System.out.println(e.getMessage());
@@ -29,7 +29,6 @@ public class UserRegistrationTest {
         } catch (UserRegistrationException e){
             String expected= "Enter the valid first name";
             Assert.assertEquals(expected,e.getMessage());
-            System.out.println(e.getMessage());
         }
     }
 
@@ -69,7 +68,7 @@ public class UserRegistrationTest {
 
 
     /* handling exceptions to given last names of null,empty and improper
-        5 Exceptions , Starts from 75th line and ends at 129th line */
+        5 Exceptions test cases , Starts from 75th line and ends at 129th line */
 
 
     @Test
@@ -128,7 +127,7 @@ public class UserRegistrationTest {
     }
 
 /*  handling exceptions to given improper email id's
-        5 Exceptions , Starts from 132nd line and ends at 129th line */
+        5 Exceptions test cases, Starts from 132nd line and ends at 129th line */
 
     @Test
     public void HandleCustomExceptionForGivenEmailWithNoMandatoryParts() {
@@ -184,7 +183,7 @@ public class UserRegistrationTest {
     }
 
 /*  handling exceptions to given improper Mobile Numbers
-        5 Exceptions , Starts from 189th line and ends at 243rd line */
+        5 Exceptions test cases, Starts from 189th line and ends at 243rd line */
 
     @Test
     public void HandleCustomExceptionForGivenMobileNumberWithoutCountryCode() {
@@ -243,7 +242,7 @@ public class UserRegistrationTest {
     }
 
     /*  handling exceptions to given improper Passwords
-        5 Exceptions , Starts from 189th line and ends at 243rd line */
+        5 Exceptions test cases, Starts from 246th line and ends at 313th line */
 
     @Test
     public void HandleCustomExceptionForGivenPasswordWithNoMinimumCharacters() {
